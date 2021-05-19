@@ -1,0 +1,46 @@
+.fieldsetdiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+form {
+	width: 50%;
+}
+
+#personalPartOnePOST, #personalPartOneGET {
+	height: 300px;
+	padding-top: 10px;
+}
+
+textarea {
+	width: 30%;
+	height: 100px;
+}
+
+#personalPartTwoPOST, #personalPartTwoGET {
+	height: 300px;
+}
+
+hr {
+	margin: 20px 0px 20px 0px;
+}
+
+#contactPOST, #contactGET {
+	height: 100px;
+	padding: 10px 0px 10px 0px;
+}
+
+#formEndPOST, #formEndGET {
+	height: 50px;
+	padding: 10px 0px 10px 0px;
+}
+
+.buttons {
+	margin: 15px 0px 0px 0px;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+}

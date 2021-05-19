@@ -1,0 +1,9 @@
+#picwithmask {
+    width:700px;
+    height: 700px;
+    -webkit-mask-image: url(https://avatanplus.com/files/resources/mid/5702347c1e406153e09d04dc.png);
+    -webkit-mask-size:700px;
+  }
+#roundpic {
+       clip-path: circle(50%);
+}

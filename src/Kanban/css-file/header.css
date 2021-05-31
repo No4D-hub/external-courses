@@ -1,16 +1,3 @@
-* {
-	margin: 0px;
-	padding: 0px;
-}
-
-body {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
 .header {
 	height: 55px;
 	background-color: #0067A3;
@@ -18,12 +5,8 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	z-index: 1;
 }
-
-.main {
-	width: calc(100vh-110px);
-}
-
 
 .app-logo {
 	display: flex;
@@ -32,15 +15,15 @@ body {
 }
 
 .app-logo__title {
-	font-family: Roboto;
-	font-size: 32px;
+	font-family: Roboto, sans-serif;
+    font-size: 32px;
 	color: #fff;
 	padding-bottom: 2px;
 }
 
 .create-new-list {
 	position: absolute;
-	right: 113px;
+    right: 113px;
 	background-color: #fff;
 	height: 33px;
 	width: 181px;
@@ -52,7 +35,7 @@ body {
 }
 
 .create-new-list__text {
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 	font-size: 20px;
 	color: #000;
 	padding-right: 5px;
@@ -62,45 +45,22 @@ body {
 	padding-left: 5px;
 }
 
-.user-menu {
+.user-menu__panel {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+    justify-content: center;
+    z-index: 3;
 }
 
 .user-menu__avatar {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	background-color: #fff;
+    background-color: #fff;
+    z-index: 2;
 }
 
-.footer {
-	height: 55px;
-	background-color: #0067A3;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+.user-menu__panel:hover {
+    cursor: pointer;
 }
-
-.tasks-info, .user-info {
-	font-family: Roboto;
-	font-size: 16px;
-	color: #fff;
-}
-
-.tasks-info {
-	display: flex;
-	flex-direction: row;
-	padding-left: 67px;
-}
-
-.tasks__amount {
-	padding-right: 36px;
-}
-
-.user-info {
-	padding-right: 24px;
-} 

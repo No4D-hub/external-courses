@@ -1,0 +1,24 @@
+table {
+	background-color: royalblue;
+	border-collapse: collapse;
+}
+
+td, .row, th {
+	border: 2px solid white;
+}
+
+td, .row {
+	padding: 20px;
+	font: 14px Arial;
+	color: #4c637b;
+	text-align: left;
+}
+
+#tablehead {
+	padding: 5px;
+	background-color: #e3eaf3;
+	text-transform: uppercase;
+	color: #758697;
+	font: bold 14px Arial;
+	text-align: center;
+}

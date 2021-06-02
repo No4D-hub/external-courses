@@ -53,7 +53,7 @@ Room.prototype.plug = function (name) {
     for (let i = 0; i < this.electronics.length; i++) {
         if (this.electronics[i] === name) {
             this.electronics[i].isPlugged = true;
-            this.freeSockets--;
+            this.freeSockets = this.freeSockets - 1;
             this.consumingPower += this.electronics[i].power;
             totalPower += this.consumingPower;
         }
@@ -63,12 +63,12 @@ Room.prototype.plug = function (name) {
 Room.prototype.has = function (name) {
     itemsamount = 0;
 
-    for (let i = 0; i < this.electronics.length; i++) {
-        if (this.electronics[i].name.includes(name)) {
-            itemsamount++;
+    this.electronics.forEach(function(item) {
+        if (item.name.includes(name)) {
+            itemsamount = itemsamount + 1;
         }
-    }
-
+    });
+    
     return itemsamount;
 };
 

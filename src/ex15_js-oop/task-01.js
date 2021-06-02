@@ -92,13 +92,7 @@ function searchInGift(array) {
 }
 
 function comparator(firstElement, secondElement) {
-		if (firstElement.getWeight() > secondElement.getWeight()) {
-			return 1;
-		} else if (firstElement.getWeight() === secondElement.getWeight()) {
-			return 0;
-		}
-        
-        return -1;
+	return firstElement.getWeight() - secondElement.getWeight();
 }
 
 let sweets = [];

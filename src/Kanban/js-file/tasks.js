@@ -120,8 +120,7 @@ function changeButtonSetting() {
         if (dataMock[i - 2].issues.length > 0) {
             buttons[i].removeAttribute('disabled', 'true');
             buttons[i].className = ('taskBlock__addbutton');
-        }
-        if (dataMock[i - 2].issues.length === 0) {
+        } else if (dataMock[i - 2].issues.length === 0) {
             buttons[i].setAttribute('disabled', 'true');
             buttons[i].className = ('taskBlock__addbutton_disabled');
         }

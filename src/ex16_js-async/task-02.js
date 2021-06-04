@@ -1,34 +1,36 @@
-function debounce(callback, time) {
-    let timeLeft = time;
+function debounce(func, wait) {
+  let timeout;
+
+  return function executedFunction() {
+    const later = function() {
+      timeout = null;
+    };
+
+    const callNow = !timeout;
+
+    clearTimeout(timeout);
+
+    timeout = setTimeout(later, wait);
+
+    if (callNow) func.apply(this, arguments);
+  };
+};
   
-    function delayCallback() {
-      if (timeLeft < time) {
-        return undefined;
-      } 
-      callback.apply(this, arguments);
-      timeLeft = 0;
-      setTimeout(() => {timeLeft = time}, time);
+let searchButton = document.querySelector('.input__button');
+let input = document.querySelector('.input__field');
+let output = document.querySelector('.output__queries');
+let firstDebounce = true;
   
-      return undefined;
-    }
-  
-    return delayCallback;
-  }
-  
-  let searchButton = document.querySelector('.input__button');
-  let input = document.querySelector('.input__field');
-  let output = document.querySelector('.output__queries');
-  
-  function printSearch() {
-    let queryText = input.value;
+function printSearch() {
+  let queryText = input.value;
     
-    if (queryText !== '') {
-      output.innerHTML += queryText + '<br>';
-    }
-  
-    return undefined;
+  if (queryText !== '') {
+    output.innerHTML += queryText + '<br>';
   }
   
-  let query = debounce(printSearch, 2000);
+  return undefined;
+}
   
-  searchButton.onclick = query;
+let query = debounce(printSearch, 2000);
+  
+searchButton.onclick = query;

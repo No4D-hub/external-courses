@@ -9,6 +9,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 5px;
+    animation: showMenu 500ms ease-in-out forwards;
 }
 
 .menu__item {
@@ -27,10 +28,10 @@
     font-size: 20px;
     padding: 0px;
     padding-left: 5px;
+    
 }
 
-
-@keyframes showmenu {
+@keyframes showMenu {
     0% {
         top: 55px;
         opacity: 0%;
@@ -56,6 +57,7 @@
 }
 
 .menu__item-link:hover {
+    display: block;
     text-decoration: none;
     color: #0079BF;
     cursor: pointer;

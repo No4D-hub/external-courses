@@ -28,7 +28,6 @@ function openMenu() {
                 itemContent.href = menuLinks[i-1];
             }
     }
-    menu.style.animation = 'showmenu 0.5s ease-in-out forwards'
     replaceArrow();
 }
 
@@ -46,7 +45,7 @@ function replaceArrow() {
     arrow.src = isOpened?'svg-file/arrow-up.svg':'svg-file/arrow-down.svg';
 }
 
-function menuMain() {
+function onMenuMain() {
     if (!isOpened) {
         openMenu(); 
     } else { 
@@ -54,4 +53,4 @@ function menuMain() {
     }
 }
 
-userPanel.onclick = menuMain; 
+userPanel.addEventListener('click', onMenuMain);

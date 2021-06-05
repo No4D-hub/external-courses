@@ -1,0 +1,91 @@
+.header {
+	height: 55px;
+	background-color: #0067A3;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.app-logo {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	padding-left: 15px;
+}
+
+.app-logo__title {
+	padding-left: 5px;
+    font-size: 32px;
+	color: #fff;
+	padding-bottom: 2px;
+}
+
+.create-new-list {
+    right: 113px;
+	background-color: #fff;
+	height: 33px;
+	width: 181px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: none;
+}
+
+.create-new-list:hover .create-new-list__text, .create-new-list:hover {
+	cursor: pointer;
+	color: #0067A3;
+}
+
+.create-new-list__text {
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	color: #000;
+	padding-right: 5px;
+}
+
+.create-new-list__icon {
+	padding-left: 5px;
+}
+
+.user-menu__panel {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.user-menu__avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+    background-color: #fff;
+	z-index: 2;
+}
+
+.user-menu__panel:hover {
+    cursor: pointer;
+}
+
+.userpanel {
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	justify-content: space-around;
+	align-items: center;
+} 
+
+@keyframes rotateArrowOpen {
+	to {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes rotateArrowClose {
+	to {
+		transform: rotate(-180deg);
+	}
+} 

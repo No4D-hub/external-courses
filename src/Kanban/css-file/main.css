@@ -1,0 +1,118 @@
+.main {
+	height: calc(100vh - 110px);
+	background-color: #0079BF;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.taskBlock {
+	position: relative;
+	width: 450px;
+	height: 150px;
+	background-color: #EBECF0;
+	border-radius: 10px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	max-height: 780px;
+
+}
+
+.taskBlock__list {
+	list-style: none;
+    border-radius: 10px;
+	padding: 5px;
+	max-height: 700px;
+	overflow:auto;
+}
+
+.taskBlock__taskItem {
+	background-color: white;
+	opacity: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid #EBECF0;
+    font-family: Roboto;
+	font-size: 16px;
+	color: #000;
+	animation: 0.2s append linear forwards;
+}
+
+.taskBlock__header {
+	font-family: Roboto;
+	font-size: 20px;
+    padding: 0px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.taskBlock__addbutton {
+	background-color: #EBECF0;
+	font-family: Roboto;
+	font-size: 16px;
+	color: #5E6C84;
+	border: none;
+	align-self: flex-start;	
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.taskBlock__addbutton:hover {
+	cursor: pointer;
+	color: #0079BF;
+}
+
+.taskBlock__addbutton_disabled {
+	cursor: initial;
+	color: rgb(203, 206, 212);
+	background-color: #EBECF0;
+	font-size: 16px;
+	border: none;
+	align-self: flex-start;	
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.taskBlock__input {
+	width: 400px;
+	background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid #EBECF0;
+    font-family: Roboto;
+	font-size: 16px;
+	color: #000;
+	animation: 0.2s append linear forwards;
+}
+
+.taskBlock__dropdown {
+	padding: 10px;
+	padding-left: 5px;
+	align-self: center;
+	width: 430px;
+	border-radius: 10px;
+    border: 5px solid #EBECF0;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	background: url(../icons/arrowdown.svg) no-repeat right #0079BF;
+	-webkit-appearance: none;
+	animation: 0.2s append linear forwards;
+}
+
+.taskBlock__dropdownOption {
+	width: 400px;
+	background-color: white;
+    border: 5px solid #EBECF0;
+	font-size: 16px;
+	color: #000;
+}
+
+@keyframes append {
+	from {
+		opacity: 20%;
+	}
+	to {
+		opacity: 100%;
+	}
+} 

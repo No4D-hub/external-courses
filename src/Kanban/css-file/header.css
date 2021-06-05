@@ -1,0 +1,66 @@
+.header {
+	height: 55px;
+	background-color: #0067A3;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.app-logo {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.app-logo__title {
+	font-family: Roboto, sans-serif;
+    font-size: 32px;
+	color: #fff;
+	padding-bottom: 2px;
+}
+
+.create-new-list {
+	position: absolute;
+    right: 113px;
+	background-color: #fff;
+	height: 33px;
+	width: 181px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.create-new-list__text {
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	color: #000;
+	padding-right: 5px;
+}
+
+.create-new-list__icon {
+	padding-left: 5px;
+}
+
+.user-menu__panel {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.user-menu__avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.user-menu__panel:hover {
+    cursor: pointer;
+}

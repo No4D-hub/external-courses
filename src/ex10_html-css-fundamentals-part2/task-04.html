@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Task-BEM</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="task-04.css">
+</head>
+<body>
+	<header class="header">
+		<div class="about">
+			<div class="logo">
+				<h2 class="logo__text">logo</h2>
+			</div>
+			<ul class="contacts">
+				<li class="contacts__item">
+					<svg version="1.1" class="contacts__icon"  width="25" height="25"
+						 x="0px" y="0px" viewBox="0 0 384 384"
+						style="enable-background:new 0 0 384 384;" xml:space="preserve">
+						<g>
+							<g>
+								<path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.906-3.719-23.323-0.833-30.438,6.417l-43.177,32.594
+								c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+								c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.812C13.823,0,0,13.823,0,30.812
+								C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z
+								M362.667,353.188c0,5.229-4.25,9.479-9.479,9.479c-182.99,0-331.854-148.865-331.854-331.854c0-5.229,4.25-9.479,9.479-9.479
+								h70.521c5.229,0,9.479,4.25,9.479,9.479c0,25.802,4.052,51.125,11.979,75.115c1.104,3.542,0.208,7.208-3.375,10.938L82.75,165.427
+								c-2.458,3.26-2.844,7.625-1,11.26c29.927,58.823,66.292,95.188,125.531,125.542c3.604,1.885,8.021,1.49,11.292-0.979
+								l49.677-37.635c2.51-2.51,6.271-3.406,9.667-2.25c24.156,7.979,49.479,12.021,75.271,12.021c5.229,0,9.479,4.25,9.479,9.479
+								V353.188z" />
+							</g>
+						</g>
+						<style>
+						</style>
+					</svg>
+					<div class="contacts__hint">111-222-3333</div>
+				</li>
+				<li class="contacts__item">
+					<svg version="1.1" class="slider__icon"
+						x="0px" y="0px" width="25" height="25"
+						viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+						<g>
+							<g>
+								<path d="M256,0C156.748,0,76,80.748,76,180c0,33.534,9.289,66.26,26.869,94.652l142.885,230.257
+								c2.737,4.411,7.559,7.091,12.745,7.091c0.04,0,0.079,0,0.119,0c5.231-0.041,10.063-2.804,12.75-7.292L410.611,272.22
+								C427.221,244.428,436,212.539,436,180C436,80.748,355.252,0,256,0z M384.866,256.818L258.272,468.186l-129.905-209.34
+								C113.734,235.214,105.8,207.95,105.8,180c0-82.71,67.49-150.2,150.2-150.2S406.1,97.29,406.1,180
+								C406.1,207.121,398.689,233.688,384.866,256.818z" />
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M256,90c-49.626,0-90,40.374-90,90c0,49.309,39.717,90,90,90c50.903,0,90-41.233,90-90C346,130.374,305.626,90,256,90z
+								M256,240.2c-33.257,0-60.2-27.033-60.2-60.2c0-33.084,27.116-60.2,60.2-60.2s60.1,27.116,60.1,60.2
+								C316.1,212.683,289.784,240.2,256,240.2z" />
+							</g>
+						</g>
+						<style>
+						</style>
+					</svg>
+					<div class="contacts__hint">Saudi Arabia, Alreyadah</div>
+				</li>
+				<li class="contacts__item">
+					<svg class="contacts__icon" enable-background="new 0 0 479.058 479.058" height="25"
+						viewBox="0 0 479.058 479.058" width="25" >
+						<path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z" />
+						<style>
+						</style>
+					</svg>
+					<div class="contacts__hint">example@mail.com</div>
+				</li>
+			</ul>
+		</div>
+		<div class="navigation">
+			<div class="menu_tablet">
+				<div class="burger"></div>
+				<div class="burger"></div>
+				<div class="burger"></div>
+			</div>
+			<ul class="menu">
+				<li class="menu__item">
+					<a class="menu__item-link" href="#">HOME</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item-link" href="#">What about ISAMA</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item-link" href="#">What we do?</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item-link" href="#">Our projects</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item-link" href="#">Excellent Team</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item-link" href="#">Contact</a>
+				</li>
+			</ul>
+			<div class="tabletlogo">
+				<h2 class="logo__text">logo</h2>
+			</div>
+			<div class="search">
+				<svg version="1.1" class="search__icon" 
+					 x="0px" y="0px" width="25" height="25"
+					viewBox="0 0 448.098 448.098" style="enable-background:new 0 0 448.098 448.098;"
+					xml:space="preserve">
+					<g>
+						<g>
+							<path d="M184.08,0c-101.62,0-184,82.38-184,184s82.38,184,184,184s184-82.38,184-184C367.992,82.416,285.664,0.088,184.08,0z
+							M184.08,304c-66.274,0-120-53.726-120-120s53.726-120,120-120s120,53.726,120,120C303.992,250.238,250.318,303.912,184.08,304z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path d="M438.64,393.44l-64-64c-12.504-12.504-32.776-12.504-45.28,0s-12.504,32.776,0,45.28l64,64
+							c12.504,12.504,32.776,12.504,45.28,0S451.144,405.944,438.64,393.44z" />
+						</g>
+					</g>
+				</svg>
+				<input type="search" class="search__field" placeholder="Type your search words">
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="maininfo">
+			<div class="title">
+				<p class="title__heading">let's draw some arts</p>
+				<div class="underheading">
+					<p class="underheading__and">&</p>
+					<p class="underheading__string">make your business much better</p>
+				</div>
+			</div>
+			<div class="slider">
+				<div class="picture" id="greenpic">
+					<img src="images/pic1.png" alt="green">
+					<div class="like">
+						<svg class="like__icon" enable-background="new 0 0 511.557 511.557" height="25"
+							viewBox="0 0 511.557 511.557" width="25">
+							<path d="m441.941 161.759c-3.325-8.188-12.658-12.129-20.844-8.806-8.188 3.325-12.13 12.657-8.806 20.844 18.693 46.043-44.127 104.77-83.591 135.27-12.046 9.309-5.419 28.661 9.795 28.661 3.417 0 6.86-1.09 9.773-3.341 54.607-42.203 119.532-108.943 93.673-172.628z" />
+							<path d="m379.785 145.295c6.19 1.598 7.284 3.157 11.995 3.157 6.319 0 12.307-3.77 14.831-9.986 3.324-8.188-.62-17.52-8.807-20.843-3.252-1.32-6.623-2.434-10.018-3.311-8.556-2.211-17.283 2.935-19.492 11.491s2.935 17.283 11.491 19.492z" />
+							<path d="m367.786 47.779c-43.879 0-84.917 20.012-112 53.491-27.083-33.479-68.121-53.491-112-53.491-107.628 0-199.469 122.919-103.413 254.198 20.806 28.435 49.632 56.865 85.678 84.5 60.688 46.528 120.454 74.628 122.969 75.801 4.282 1.998 9.234 2.005 13.532 0 2.515-1.173 62.28-29.273 122.969-75.801 36.045-27.635 64.872-56.064 85.678-84.5 95.933-131.111 4.43-254.198-103.413-254.198zm-112 382.172c-38.132-19.212-224-119.014-224-238.173 0-61.757 50.243-112 112-112 40.688 0 78.243 22.134 98.009 57.764 6.082 10.963 21.894 10.975 27.982 0 19.766-35.63 57.32-57.764 98.009-57.764 61.757 0 112 50.243 112 112 0 119.16-185.871 218.963-224 238.173z" />
+						</svg>
+						Like
+					</div>
+				</div>
+				<div class="picture" id="yellowpic">
+					<img src="images/pic2.png" alt="phone">
+					<div class="like">
+						<svg class="like__icon" enable-background="new 0 0 511.557 511.557" height="25"
+							viewBox="0 0 511.557 511.557" width="25">
+							<path d="m441.941 161.759c-3.325-8.188-12.658-12.129-20.844-8.806-8.188 3.325-12.13 12.657-8.806 20.844 18.693 46.043-44.127 104.77-83.591 135.27-12.046 9.309-5.419 28.661 9.795 28.661 3.417 0 6.86-1.09 9.773-3.341 54.607-42.203 119.532-108.943 93.673-172.628z" />
+							<path d="m379.785 145.295c6.19 1.598 7.284 3.157 11.995 3.157 6.319 0 12.307-3.77 14.831-9.986 3.324-8.188-.62-17.52-8.807-20.843-3.252-1.32-6.623-2.434-10.018-3.311-8.556-2.211-17.283 2.935-19.492 11.491s2.935 17.283 11.491 19.492z" />
+							<path d="m367.786 47.779c-43.879 0-84.917 20.012-112 53.491-27.083-33.479-68.121-53.491-112-53.491-107.628 0-199.469 122.919-103.413 254.198 20.806 28.435 49.632 56.865 85.678 84.5 60.688 46.528 120.454 74.628 122.969 75.801 4.282 1.998 9.234 2.005 13.532 0 2.515-1.173 62.28-29.273 122.969-75.801 36.045-27.635 64.872-56.064 85.678-84.5 95.933-131.111 4.43-254.198-103.413-254.198zm-112 382.172c-38.132-19.212-224-119.014-224-238.173 0-61.757 50.243-112 112-112 40.688 0 78.243 22.134 98.009 57.764 6.082 10.963 21.894 10.975 27.982 0 19.766-35.63 57.32-57.764 98.009-57.764 61.757 0 112 50.243 112 112 0 119.16-185.871 218.963-224 238.173z" />
+						</svg>
+						Like
+					</div>
+				</div>
+				<div class="slider__arrow">
+					<svg version="1.1" class="slider__icon"  height="25" width="25"
+						 x="0px" y="0px" viewBox="0 0 512.002 512.002"
+						style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+						<g>
+							<g>
+								<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+										L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+										l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z" />
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="articles">
+			<article class="content">
+				<img class="article__image" src="images/lamp.png" alt="lamp">
+				<div class="article">
+					<h2 class="article__heading">
+						What about ISAMA
+					</h2>
+					<p class="article__text">
+						ISAMA is a marketing foundation located in Riyadh built on the talent of creation that leads to
+						a modern concept of professionalism. At ISAMA we beleive even if you are good at what you do,
+						you have a great product or you provide an excellent service. We still can present you a little
+						better to the world, creating your full identity, provides you with your marketing plans, design
+						your website, print your publications, design your logo's and offices. Simply we give your
+						business the perfect image.
+					</p>
+				</div>
+			</article>
+			<article class="content">
+				<img class="article__image" src="images/tree.png" alt="tree">
+				<div class="article">
+					<h2 class="article__heading">
+						Why we exist
+					</h2>
+					<p class="article__text">
+						Reaching customer satisfaction through providing them with cutting-edge technologies that give
+						clients access to a wide range of tools, ensuring efficient and result-oriented communication
+						solutions, which grant them a special character that distinguishes them from the others in the
+						business.
+					</p>
+				</div>
+			</article>
+		</div>
+	</main>
+</body>
+</html>

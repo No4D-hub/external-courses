@@ -1,0 +1,15 @@
+.row {
+    background-color: #f2f6fa; 
+} 
+
+td:nth-child(4) {
+ 	text-align: left;	
+}
+
+td:nth-child(1) {
+ 	text-transform: capitalize;
+}
+
+td:hover, .row:hover {
+	background-color: #e2e5e9;
+}

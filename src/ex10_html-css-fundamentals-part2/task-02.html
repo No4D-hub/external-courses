@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Task-02</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="task-02.css">
+</head>
+<body>
+	<form action="http://httpbin.org/post" method="post">
+		POST
+		<fieldset>
+			<legend>Personal data</legend>
+			<div class="field-set-div" id="personalPartOnePOST">
+				<div>
+					<label for="surnamePOST">Surname</label>
+					<input type="text" id="surnamePOST" name="surname">
+				</div>
+				<div>
+					<label for="firstNamePOST">First Name</label>
+					<input type="text" id="firstNamePOST" name="firstName">
+				</div>
+				<div>
+					<label for="middleNamePOST">Middle Name</label>
+					<input type="text" id="middleNamePOST" name="middleName">
+				</div>
+				<div>
+					<label>You are</label>
+					<input type="radio" name="sex" value="male"> Male
+					<input type="radio" name="sex" value="female"> Female
+				</div>
+				<div>
+					<label for="agePOST">Age</label>
+					<input type="number" id="agePOST" name="age" min="18" max="101">
+				</div>
+				<div>
+					<label for="countryPOST">Country of Residence </label>
+					<select name="country" id="countryPOST">
+						<option value="russia">Russia</option>
+						<option value="usa">USA</option>
+					</select>
+				</div>
+				<div>
+					<label>City</label>
+					<input type="checkbox" name="city" value="ryazan"> Ryazan
+					<input type="checkbox" name="city" value="moscow"> Moscow
+				</div>
+				<div>
+					<label for="filePOST">Photography</label>
+					<input type="file" id="filePOST" name="file">
+				</div>
+			</div>
+			<hr>
+			<div class="field-set-div" id="personalPartTwoPOST">
+				<div><label for="titlePOST">Title</label>
+					<select name="title" id="titlePOST" size="8">
+						<optgroup label="Technologies">
+							<option value="webMaster">Web Master</option>
+							<option value="dataAdmin">Database Administrator</option>
+							<option value="design">Computer-aided Design</option>
+						</optgroup>
+						<optgroup label="Finance">
+							<option value="economicPlanning">Economic Planning</option>
+							<option value="managmentAccounting">Managment Accounting</option>
+							<option value="budgetingAndPlanning">Budgeting and Planning</option>
+						</optgroup>
+					</select>
+				</div>
+				<div><label for="salaryPOST">Salary</label>
+					<input type="range" id="salaryPOST" name="salary" min="0" max="100" step="1" value="50">
+				</div>
+				<textarea name="tellus" placeholder="Tell us about yourself"></textarea>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Contact Information</legend>
+			<div class="field-set-div" id="contactPOST">
+				<div>
+					<label for="sitePOST">Site</label>
+					<input type="url" id="sitePOST" name="website">
+				</div>
+				<div>
+					<label for="mailPOST">Email</label>
+					<input type="email" id="mailPOST" name="email">
+				</div>
+				<div>
+					<label for="phonePOST">Phone</label>
+					<input type="tel" id="phonePOST" name="phone">
+				</div>
+			</div>
+		</fieldset>
+		<div class="field-set-div" id="formEndPOST">
+			<div>
+				<label for="passwordPOST">Password</label>
+				<input type="password" id="passwordPOST" name="password" required>
+			</div><br>
+			<div class="buttons">
+				<input type="submit">
+				<input type="reset">
+			</div>
+		</div>
+	</form>
+	<form action="http://httpbin.org/post" method="get">
+		GET
+		<fieldset>
+			<legend>Personal data</legend>
+			<div class="field-set-div" id="personalPartOneGET">
+				<div>
+					<label for="surnameGET">Surname</label>
+					<input type="text" id="surnameGET" name="surname">
+				</div>
+				<div>
+					<label for="firstNameGET">First Name</label>
+					<input type="text" id="firstNameGET" name="firstName">
+				</div>
+				<div>
+					<label for="middleNameGET">Middle Name</label>
+					<input type="text" id="middleNameGET" name="middleName">
+				</div>
+				<div>
+					<label>You are</label>
+					<input type="radio" name="sex" value="male"> Male
+					<input type="radio" name="sex" value="female"> Female
+				</div>
+				<div>
+					<label for="ageGET">Age</label>
+					<input type="number" id="ageGET" name="age" min="18" max="101">
+				</div>
+				<div>
+					<label for="countryGET">Country of Residence </label>
+					<select name="country" id="countryGET">
+						<option value="russia">Russia</option>
+						<option value="usa">USA</option>
+					</select>
+				</div>
+				<div>
+					<label>City</label>
+					<input type="checkbox" name="city" value="ryazan"> Ryazan
+					<input type="checkbox" name="city" value="moscow"> Moscow
+				</div>
+				<div>
+					<label for="fileGET">Photography</label>
+					<input type="file" id="fileGET" name="file">
+				</div>
+			</div>
+			<hr>
+			<div class="field-set-div" id="personalPartTwoGET">
+				<div><label for="titleGET">Title</label>
+					<select name="title" id="titleGET" size="8">
+						<optgroup label="Technologies">
+							<option value="webMaster">Web Master</option>
+							<option value="dataAdmin">Database Administrator</option>
+							<option value="design">Computer-aided Design</option>
+						</optgroup>
+						<optgroup label="Finance">
+							<option value="economicPlanning">Economic Planning</option>
+							<option value="managmentAccounting">Managment Accounting</option>
+							<option value="budgetingAndPlanning">Budgeting and Planning</option>
+						</optgroup>
+					</select>
+				</div>
+				<div><label for="salaryGET">Salary</label>
+					<input type="range" id="salaryGET" name="salary" min="0" max="100" step="1" value="50">
+				</div>
+				<textarea name="tellus" placeholder="Tell us about yourself"></textarea>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Contact Information</legend>
+			<div class="field-set-div" id="contactGET">
+				<div>
+					<label for="siteGET">Site</label>
+					<input type="url" id="siteGET" name="website">
+				</div>
+				<div>
+					<label for="mailGET">Email</label>
+					<input type="email" id="mailGET" name="email">
+				</div>
+				<div>
+					<label for="phoneGET">Phone</label>
+					<input type="tel" id="phoneGET" name="phone">
+				</div>
+			</div>
+		</fieldset>
+		<div class="field-set-div" id="formEndGET">
+			<div>
+				<label for="passwordGET">Password</label>
+				<input type="password" id="passwordGET" name="password" required>
+			</div><br>
+			<div class="buttons">
+				<input type="submit">
+				<input type="reset">
+			</div>
+		</div>
+	</form>
+</body>
+</html>
